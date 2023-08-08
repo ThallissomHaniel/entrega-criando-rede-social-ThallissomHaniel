@@ -1,0 +1,205 @@
+@import url('./globalStyles.css');
+@import url('./texts.css');
+
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 80px;
+}
+
+header {
+    background-color: var(--grey1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9375rem 4.375rem 0.9375rem 4.375rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.image__profile {
+    height: 3.125rem;
+}
+
+.profile__container {
+    display: flex;
+    gap: 15px;
+}
+
+.profile__container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.users__container {
+    display: flex;
+    gap: 6.25rem;
+}
+
+.profile__post {
+    width: 65%;
+}
+
+.profile__suggestion {
+    width: 35%;
+}
+
+li {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.text2--bold {
+    font-weight: 600;
+    font-size: var(--fontSize-text2);
+}
+
+.submit__button {
+    background-color: var(--brand-1);
+    color: var(--whiteFixed);
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 5rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.follow__button {
+    background-color: var(--whiteFixed);
+    color: var(--grey1);
+    border: 1px solid var(--grey1);
+    padding: 0.3rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.open_post__button {
+    background-color: var(--grey1);
+    color: var(--whiteFixed);
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input--style {
+    color: var(--grey2);
+    border: 1px solid var(--grey4);
+    resize: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.submit__button:hover {
+    background-color: var(--brand-2);
+}
+
+.follow__button:hover {
+    background-color: var(--whiteFixed);
+    border: 1px solid var(--brand-2);
+    color: var(--brand-2);
+}
+
+.follow__button:focus {
+    background-color: var(--brand-2);
+    color: var(--whiteFixed);
+}
+
+.open_post__button:hover {
+    background-color: var(--grey0);
+}
+
+.input--style:focus {
+    border: 1px solid var(--brand-2);
+}
+
+.posts__container {
+    width: 60%;
+}
+
+article p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.post__feedback,
+.post__feedback--gap {
+    display: flex;
+    align-items: center;
+}
+
+.post__feedback--gap {
+    gap: 15px;
+}
+
+article {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media(max-width: 1025px) {
+    .users__container {
+        flex-wrap: wrap;
+    }
+
+    .profile__post {
+        width: 100%;
+    }
+
+    .profile__suggestion {
+        width: 90vw;
+    }
+
+    .profile__suggestion ul {
+        display: flex;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+
+    .profile__suggestion li {
+        flex-direction: column;
+        align-items: unset;
+        flex: 0 0 250px;
+    }
+
+    .profile__suggestion button {
+        align-self: self-start;
+    }
+}
+
+.modal__controller{
+    border: none;
+    width: 90vw;
+    border-radius: 10px;
+}
+
+.modal__container{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.modal__container > div{
+    display: flex;
+    gap: 10px;
+}
+
+#close{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
