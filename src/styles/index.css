@@ -51,7 +51,8 @@ li {
     margin-top: 10px;
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
+    justify-content: space-between;
 }
 
 .text2--bold {
@@ -90,6 +91,7 @@ li {
     color: var(--grey2);
     border: 1px solid var(--grey4);
     resize: none;
+    padding: 10px;
 }
 
 form {
@@ -114,6 +116,11 @@ form {
     color: var(--whiteFixed);
 }
 
+.follow__button--focus {
+    background-color: var(--brand-2);
+    color: var(--whiteFixed);
+}
+
 .open_post__button:hover {
     background-color: var(--grey0);
 }
@@ -124,6 +131,7 @@ form {
 
 .posts__container {
     width: 60%;
+    margin-bottom: 50px;
 }
 
 article p{
@@ -139,7 +147,7 @@ article p{
 }
 
 .post__feedback--gap {
-    gap: 15px;
+    gap: 40px;
 }
 
 article {
@@ -181,12 +189,12 @@ article {
 
 .modal__controller{
     border: none;
-    width: 90vw;
+    width: 50vw;
     border-radius: 10px;
 }
 
 .modal__container{
-    width: 90vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
